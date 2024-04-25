@@ -63,6 +63,7 @@ li {
   border-radius: 8px;
   font-style: italic;
   color: #f9f9f6;
+  
 }
 
 /* mainstart */
@@ -118,13 +119,7 @@ p {
   height: 400px ;
   width: 400px;
   border-radius: 10px;
-
-
-    
   
-   
-  
-   
 }
 
 .imagebox{
@@ -159,8 +154,13 @@ li:after {
   background: #fff;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
+   
 }
 li:hover:after {
   width: 100%;
   left: 0;
+  
+}
+li:hover{
+ cursor: pointer;
 }

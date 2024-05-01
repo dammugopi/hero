@@ -4,39 +4,112 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dammu Gopi</title>
+   
    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
+   
 </head>
+
+
+
 <body>
-   <header class="header">
-    <div class="name">
-      <img src="logodg.png" alt="DG">
-       <p> <span class="dammu">Dammu</span> <span>Gopi</span></p>
-    </div>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Resume</li>
-        <li>Projects</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
-   </header>
-   <main>
-    <div class="about">
-      <p id="hi">Hi</p>
-      <p id="iam">I am <span class="dammu"> Dammu 
-         </span>
-         <span> Gopi</span>,</p>
-      <p>Frontend developer who creates cool websites and make sure everything looks great and works smoothly for users. With Gopi on board, your digital ideas come to life!</p>
-    </div> 
-    <div class="imagebox ">
-      <img  class="image" src=" C0IRgcvg4lAXAAAAAElFTkSuQmCC.png" alt="my image">
-    </div>
-   </main>
-
-
   
+  <section class="header" id="home">
+    <nav>
+      <div class="logoname">
+      <a href="index.html"><img src="logodg.png" alt="logo"></a>
+      <p><span class="dammu">Dammu </span><span class="gopi">Gopi</span></p>
+    </div>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#projects">PROJECT</a></li>
+            <li><a href="">RESUME</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+   
+    <div class="main">
+        <div class="about">
+          <div class="innerabout">
+          <p id="hi">Hi, <br> 
+            I am <span class="dammu" >Dammu</span> <span class="gopi">Gopi</span></p>
+
+          <p>  a frontend developer, fluent in the languages of the web: HTML, CSS, and JavaScript. I craft user interfaces with an eye for design and a knack for making things intuitive and responsive. From building sleek layouts to optimizing performance, I thrive on bringing digital experiences to life in the browser.  </p>
+          <p class="hireme"><a href=""></a>Hire Me</p>
+        </div> 
+      </div>
+          <!-- nedd to write hreff -->
+        <div class="imagebox">
+          <div class="image">
+            <img src="profile pic.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+
+
+
+   <!-- ----- projects------ -->
+   <section class="project" id="projects" >
+     <p>Projects</p>
+         <div class="projects"> 
+          <!-- project1 -->
+            <div class="projectdis  project135" id="project1" onclick="location.href='https://dammugopi.github.io/hero/'"> 
+               <img src="/assests/potfolio.png" alt="portfolio"> 
+              <p><span>Portfolio</span><br>Used HTML,CSS & JS</p>
+            </div>
+          <!-- project2 -->
+            <div class="projectdis  project135" id="project2" onclick="location.href='https://dammugopi.github.io/3_column_preview/'">
+              <img src="/assests/3card.png" alt="portfolio"> 
+              <p><span>Car Option Cards</span><br>Used HTML&CSS </p>
+            </div>
+            <!-- project3 -->
+            <div class="projectdis " id="project3" onclick="location.href=''">
+              <img src="/assests/productdesign.png" alt="portfolio"> 
+              <p><span>Product Page</span><br>Used HTML,CSS & JS</p>
+            </div>
+            <!-- project4 -->
+            <div class="projectdis " id="project4"  onclick="location.href='https://dammugopi.github.io/na/'">
+              <img src="/assests/naruto2.jpg" alt="portfolio"> 
+              <p><span>Naruto Tribute</span><br>Used HTML&CSS </p>
+            </div>
+            <!-- project5 -->
+            <div class="projectdis  project135" id="project5" onclick="location.href='https://dammugopi.github.io/socialmedia/'">
+              <img src="/assests/socialmedia.png" alt="portfolio"> 
+              <p><span>Social Media</span><br>Used HTML&CSS</p>
+            </div>
+            <!-- project6 -->
+            <div class="projectdis " id="project6" onclick="location.href='https://dammugopi.github.io/wwwproject/'">
+              <img src="/assests/www.jpg" alt="portfolio"> 
+              <p><span>WWW Project</span><br>Used HTML</p>
+            </div>
+            </div>
+           
+           
+         </div>
+   </section>
+    
+
+
+
+     <script>
+      var menu = document.getElementById("navLinks")
+      function hideMenu(){
+          menu.style.right="-200px";
+           
+      }
+      function showMenu(){
+        menu.style.right="0px";
+         
+      }
+     </script>
+     <script src="https://kit.fontawesome.com/fbd9090470.js" crossorigin="anonymous"></script>
 </body>
 </html>

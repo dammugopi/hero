@@ -25,9 +25,9 @@
           <ul>
             <li><a href="#home">HOME</a></li>
             <li><a href="#projects">PROJECT</a></li>
-            <li><a href="">RESUME</a></li>
-            <li><a href="">BLOG</a></li>
-            <li><a href="">CONTACT</a></li>
+            <!-- <li><a href="">RESUME</a></li> -->
+            <li><a href="#blog">BLOG</a></li>
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
         </div>
       <i class="fa-solid fa-bars" onclick="showMenu()"></i>
@@ -40,7 +40,7 @@
             I am <span class="dammu" >Dammu</span> <span class="gopi">Gopi</span></p>
 
           <p>  a frontend developer, fluent in the languages of the web: HTML, CSS, and JavaScript. I craft user interfaces with an eye for design and a knack for making things intuitive and responsive. From building sleek layouts to optimizing performance, I thrive on bringing digital experiences to life in the browser.  </p>
-          <p class="hireme"><a href=""></a>Hire Me</p>
+          <p class="hireme"><a href="#contact">Hire Me</a></p>
         </div> 
       </div>
           <!-- nedd to write hreff -->
@@ -71,8 +71,8 @@
               <p><span>Car Option Cards</span><br>Used HTML&CSS </p>
             </div>
             <!-- project3 -->
-            <div class="projectdis " id="project3" onclick="location.href=''">
-              <img src="./assests/productdesign.png" alt="portfolio"> 
+            <div class="projectdis " id="project3" onclick="location.href='https://dammugopi.github.io/coffeeshop/'">
+              <img src="./assests/coffee.png" alt="portfolio"> 
               <p><span>Product Page</span><br>Used HTML,CSS & JS</p>
             </div>
             <!-- project4 -->
@@ -95,7 +95,57 @@
            
          </div>
    </section>
+   
+
+
+
+
+   <!-- ---------------- resume----------- -->
+    <!-- <section class="resume" >
+      
+    </section> -->
+
+
+     <!-- -------------blog------------ -->
+     <section class="blog" id="blog">
+      <h2>Blog</h2>
+      <div class="blog-container">
+        <div class="blogbox" onclick="location.href='https://dammu5354m.hashnode.dev/getting-started-with-git-a-beginners-guide'">
+           <h3>GIT Commands</h3>
+          <p>This Commands will help you in track changes, collaborate with others, and manage different versions of your code efficiently. and merges for combining changes. Learning Git enables effective version control in software development projects.</p>
+        </div>
+        <div class="blogbox" onclick="location.href='https://dammu5354m.hashnode.dev/cloud-computing-101-getting-started-guide'">
+          <h3> Cloud Computing 101</h3>
+          <p>This will help you to get started with cloud computing 
+             with resouces in the blog which is free for different 
+             cloud platforms and some starter commands for AWS and Azure  and GCP
+          </p>
+        </div>
+      </div>
+      
+
     
+
+        <!-- ------------contact-------- -->
+        <div class="contact" id="contact">
+          <h1>Get In  Touch</h1>
+        <form action="https://api.web3forms.com/submit" method="POST" class="form">
+           
+          <input type="hidden" name="access_key" value="bc48e90c-077b-4705-b9a3-a799dd9835f6">
+          <input type="text" placeholder="Name" name="firstname" id="name" class="content-input">
+          <input type="email" name="Email" id="email" placeholder="Email" class="content-input">
+
+           <textarea name="" id="textarea" placeholder="Your Message"></textarea>
+          <button class=" " id="btn">Submit</button >
+
+
+
+
+
+
+        </form>
+        </div>
+        </section>
 
 
 
